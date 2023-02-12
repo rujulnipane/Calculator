@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+@media screen and (max-width: 1300px) {
+    .calci{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .keys{
+        display: grid;
+        grid-template-rows: 6vh 6vh 6vh 6vh;
+        grid-template-columns: 10vw 10vw 10vw;
+    }
+    
+    .operations{
+        display: grid;
+        grid-template-rows: 6vh 6vh 6vh 6vh;
+        grid-template-columns: 10vw 10vw 10vw;
+    }
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background: rgb(169, 156, 156);
+}
+.box {
+    background: url("calback.jpg") no-repeat fixed center;
+    background-size:cover ;
+  }
+
+
+.box{
+    height: 100vh;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 40vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text{
+    border: 2px solid black;
+    padding: 10px;
+    width: 25vw;
+    height: 20px;
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+    font-weight: bold;
+}
+
+.anssec{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    text-align: center;
+    padding: 10px;
+    width: 25vw;
+    height: 20px;
+    font-weight: bold;
+}
+
+.calci{
+    display: flex;
+    border: 2px solid black;
+    padding: 10px;
+    justify-content: center;
+    width: 25vw;
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius:10px ;
+}
+.keys{
+    display: grid;
+    grid-template-rows: 6vh 6vh 6vh 6vh;
+    grid-template-columns: 4vw 4vw 4vw;
+    width: fit-content;
+    height: fit-content;
+}
+
+.operations{
+    display: grid;
+    grid-template-rows: 6vh 6vh 6vh 6vh;
+    grid-template-columns: 4vw 4vw 4vw;
+    width: fit-content;
+    height: fit-content;
+}
+
+.trigo{
+    border: 2px solid black;
+    width: 25vw;
+    padding: 10px;
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.trigbtn{
+    width: 4vw;
+    height: 6vh;
+}
+
+.btn,#perform,#clear,#back,.trigbtn{
+    background: none;
+    margin: 5px;
+    border-radius:7px ;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn:hover,#perform:hover,#clear:hover,#back:hover,.trigbtn:hover{
+    margin: 5px;
+    border-radius:7px ;
+    background-color: gray;
+}
